@@ -5,79 +5,109 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Vouge</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="classwork.css">
+
+
+
+	<style>
+		.btn-primary{
+			background-color: lightgrey;
+		}
+		:root {
+			--bs-primary: lightgray;
+		}
+	</style>
 </head>
 
 <body>
 
 	<div class="btn">
-		<button class="page" style="margin-right: 5%;" onclick="location.href='#page1'">HomePage</button>
-		<button class="page" style="margin-right: 5%;" onclick="location.href='#page2'">Runway</button>
-		<button class="page" onclick="location.href='#page3'">about us</button>
+		<button class="btn btn-primary" style="margin-right: 5%;" onclick="location.href='#page1'">HomePage</button>
+		<button class="btn btn-primary" style="margin-right: 5%;" onclick="location.href='#page2'">Runway</button>
+		<button class="btn btn-primary" onclick="location.href='#page3'">about us</button>
 	</div>
 
 	<br><br>
+
 	<div id="page1">
 		<h1
 			style="text-align: center; color: white; text-shadow:3px 6px 3px black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
 			Hello British Vouge</h1><br>
-		<img src="image/kendall.jpg"
-			style="display: block; object-fit: cover; width: calc(100% - 20px); height:auto; object-position: center; box-shadow:3px 3px 5px black; ">
+		<div class="row">
+			<div class="col-lg-12">
+				<img src="image/kendall.jpg"
+					style=" object-fit: cover; width: calc(100% - 20px);  box-shadow:3px 3px 5px black; ">
+			</div>
+		</div>
 
-		<div class="text"
-			style="color:black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-			<h3>Here. take a look at top model this year</h3>
-			<ol>
-				<li>Kendall jenner</li>
-				<li>GiGi Hadid</li>
-				<li>Bella Hadid</li>
-			</ol>
-			<h3>target for the next runway</h3>
-			<ul>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Here. take a look at top model this year</h3>
+				<ol>
+					<li>Kendall jenner</li>
+					<li>GiGi Hadid</li>
+					<li>Bella Hadid</li>
+				</ol>
+			</div>
+			<div class="col-sm-6">
+				<h3>target for the next runway</h3>
+				<ul>
+					<li>Milan</li>
+					<li>Rome</li>
+					<li>Italy</li>
+				</ul>
 
-				<li>Milan</li>
-				<li>Rome</li>
-				<li>Italy</li>
-			</ul>
-
+			</div>
 		</div>
 
 	</div>
-	<div id="page2">
+	</div>
 
+	<div id="page2">
 		<center>
 			<div>
 				<h1
 					style="text-align: center; color: white; text-shadow:3px 6px 3px black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">
 					Milan week1
 				</h1><br>
-				<div class="imgcontainer">
-					<img class="imginrow" src="image/runway.jpg">
-					<img class="imginrow" src="image/run.jpg">
-					<img class="imginrow" src="image/mug.jpg">
-				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<img class="imginrow" src="image/runway.jpg">
+
+					</div>
+					<div class="col-sm-4">
+						<img class="imginrow" src="image/run.jpg">
+
+					</div>
+					<div class="col-sm-4">
+
+						<img class="imginrow" src="image/mug.jpg">
+					</div>
+
+				
 			</div>
 		</center>
 		<br style="clear:both">
 
-		<div class="twopart" 			
-		style="color:black; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-			<div>
-
+		<div class="row">
+			<div class="col-sm-8">
 				<h2>first row</h2>
 				<ul>
 					<li>Alexi</li>
 					<li>Nara Smith</li>
 					<li>Nioami</li>
 				</ul>
+
 			</div>
-			<div style="border-left: 1px solid black; height:3cm;">
+			<div class="col-sm-4">
 				<h2>designer for this runway</h2>
 				<ol style="list-style-type: upper-alpha;">
 					<li>Gucci</li>
 					<li>Channel</li>
 					<li>Versace</li>
 				</ol>
+				
 			</div>
 
 		</div>
@@ -92,41 +122,55 @@
 			years, Vogue has evolved with the times, coming to encompass a wider world of culture, entertainment,
 			beauty, politics and the arts, dedicating itself to a celebration of groundbreaking image-making, great
 			journalism, and the discovery of new talent.</p>
-		<img src="image/nara.jpg"
-			style="display:block; width: calc(100% - 20px); height:auto; object-fit: cover; object-position:center; box-shadow:3px 3px 5px black">
+		<div class="row">
+			<div class="col-lg-12">
+				
+				<img class="img-fluid" src="image/nara.jpg" width="100%">
+				<!-- style="display:block; width: calc(100% - 20px); height:auto; object-fit: cover; object-position:center; box-shadow:3px 3px 5px black"> -->
 
-
-		<div class="contact">
-			<div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="row">
+			<div class="col-sm-8">
 				<p style="text-shadow:3px 6px 3px black; color:white;">contack us</p>
-
 				<ul>
 					<li>Facebook</li>
 					<li>Instagram</li>
 					<li>Twitter</li>
 				</ul>
-			</div>
-			<div>
 
+			</div>
+			<div class="col-sm-4">
 				<p style="text-shadow:3px 6px 3px black; color:white;">our sponser</p>
 				<ol>
 					<li>fashion</li>
 					<li>Beauty</li>
 					<li>Runway</li>
 				</ol>
+				
 			</div>
 		</div>
-
+		
+		<div class="contact">
+			<div>
+				
+			</div>
+			<div>
+				
+			</div>
+		</div>
 	</div>
+
 	<center>
 		<a href="signin.html">
 			<button class="signin">
 				Sign In</button>
 		</a>
 	</center>
-
-
-
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
